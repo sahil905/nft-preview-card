@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&family=Roboto:wght@100&family=Spartan:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Spartan';
+}
+
+.nft-card {
+  width: 400px;
+  border-radius: 15px;
+  margin: 100px auto;
+  height: auto;
+  background: hsl(216, 50%, 16%);
+}
+
+.nft-components {
+  margin: 40px auto;
+
+  /* padding: 20px 20px; */
+  width: 320px;
+}
+
+/* Style the nft-image session */
+
+.nft-img {
+  height: 300px;
+  width: 100%;
+}
+
+.nft-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.nft-img:hover > .view-icon {
+opacity: 0.6;
+cursor: pointer;
+}
+
+
+
+.view-icon {
+  transform: translateY(-434px);
+  margin: 130px auto;
+  background: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  opacity: 0;
+  width: 320px;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+.view-icon img {
+  width: 40px;
+  height: 40px;
+  margin: 130px 137px;
+}
+
+/* style the nft about session */
+
+.nft-about {
+  margin-top: 40px;
+}
+.nft-about h2 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+
+.nft-about p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  padding: 0 20px 0px 0px;
+}
+
+/* style the nft info session */
+
+.nft-info {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth,
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .eth img, .time img{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+} */
+
+.eth p {
+  color: hsl(178, 100%, 50%);
+  margin-left: 5px;
+  font-size: 12px;
+  transform: translateY(2px);
+}
+
+.time p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 5px;
+  font-size: 12px;
+transform: translateY(2px);
+}
+
+/* style the user session */
+
+.user {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+}
+
+.user p {
+  margin-left: 15px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+.user p > span:nth-child(1) {
+  color: hsl(215, 51%, 70%);
+  margin-right: none;
+}
+.name {
+  transition: all 1s ease;
+  margin-left: 5px;
+}
+
+/* style the hover states  */
+
+.nft-about h2:hover,
+.user .name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+
+@media (max-width: 375px){
+    .nft-card {
+        width: 430px;
+        border-radius: 15px;
+        margin: 100px 30px;
+        height: auto;
+        background: hsl(216, 50%, 16%);
+      }
+
+      .nft-components{
+          width: 300px;
+          padding: 20px 20px;
+          margin: 0;
+      }
+
+      .view-icon{
+          width: 300px;
+      }
+}
