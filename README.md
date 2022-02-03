@@ -1,3 +1,4 @@
+![Screenshot (3)](https://user-images.githubusercontent.com/98408081/152279612-e410418b-92b7-4064-bd64-d8f6a0f75403.png)
 # nft-preview-card
 
 # Front-end Style Guide
